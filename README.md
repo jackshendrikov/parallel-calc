@@ -32,7 +32,7 @@ Symbols in the block diagram:
 * `S.MA1`, `S.MA2`, `S.MA3` - to synchronize the rest of the calculations and output the result.
 
 <p align="center">
-    <img src=".img/duagram1.png" alt="Block Diagram">
+    <img src=".img/diagram1.png" alt="Block Diagram">
 </p>
 
 
@@ -80,7 +80,7 @@ Symbols in the block diagram:
 * `SM2` - semaphore to synchronize the completion of sorting `KH` in the thread `T4`.
 
 <p align="center">
-    <img src=".img/duagram2.png" alt="Block Diagram">
+    <img src="img/diagram2.png" alt="Block Diagram">
 </p>
 
 <h3 align="center">Lab 3</h3>
