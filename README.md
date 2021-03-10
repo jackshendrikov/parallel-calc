@@ -1,4 +1,4 @@
-# Parallel and Distributed Calculations
+<h1 align="center"> Parallel and Distributed Calculations</h1>
 
 <h3 align="center">Lab 1</h3>
 
@@ -84,5 +84,69 @@ Symbols in the block diagram:
 
 <p align="center">
     <img src="img/diagram2.png" alt="Block Diagram">
+</p>
+
+<h3 align="center">Lab 3</h3>
+
+<p align="center">Java. Monitors</p>
+
+<b>Task:</b> 
+
+1. Develop a parallel algorithm for solving a mathematical problem `E = (B * MR) * (MM * MO) + min(B) * Q * d` using monitors in `Java`;
+2. Identify shared resources;
+3. Describe the algorithm of each thread (T1 - Ti) with the definition of critical areas and synchronization points (Wij, Sij);
+4. Develop the structural scheme of interaction of threads where to apply all specified means of interaction of processes;
+5. Develop a program;
+6. Perform program debugging;
+7. Get the correct calculation results;
+8. Use Windows Task Manager to monitor CPU kernel load.
+
+**Problem**: `E = (B * MR) * (MM * MO) + min(B) * Q * d`;
+
+**Programming language**: `Java`;
+
+**Means of organizing interaction**: `Java monitors, synchronized blocks`;
+
+<h4 align="center">Block diagram of the interaction of threads</h4>
+
+Symbols in the block diagram:
+* `InputSignal` - signal about the completion of input in threads `T1`, `T2`, `T3`;
+* `WaitForInput` - waiting for input completion signals in threads `T1`, `T2`, `T3`;
+
+
+* `Signal` - signal about the end of calculation `E` in threads `T2`, `T3`, `T4`;
+* `WaitForSignal` - waiting for signals to complete the calculation of `E` in threads `T2`, `T2`, `T3`;
+
+
+* `SignalCalcM` - signal about the completion of complete the calculation of `m` in threads `T1`, `T2`, `T3`, `T4`;
+* `WaitForCalcM ` - waiting for signals to complete the calculation of `m` in threads `T1`, `T2`, `T3`, `T4`;
+
+
+* `SignalCalcA` - signal about the completion of complete the calculation of `Aн` in threads `T1`, `T2`, `T3`, `T4`;
+* `WaitForCalcA ` - waiting for signals to complete the calculation of `Aн` in threads `T1`, `T2`, `T3`, `T4`;
+
+
+* `copyM ` - copying a shared resource `m` by threads `T1`, `T2`, `T3`, `T4`;
+* `calcM ` - calculation of `m = min[m, m(i)]` by threads `T1`, `T2`, `T3`, `T4`;
+
+
+* `copyA ` - copying a shared resource `A` by threads `T1`, `T2`, `T3`, `T4`;
+* `calcA ` - calculation `Aн`;
+
+
+* `copyD ` - copying a shared resource `d` by threads `T1`, `T2`, `T3`, `T4`;
+* `setD ` - input of the shared resource `d` by thread `T3`;
+
+
+* `copyB ` - copying a shared resource `B` by threads `T1`, `T2`, `T3`, `T4`;
+* `setB ` - input of the shared resource `B` by thread `T2`;
+
+
+* `copyMO ` - copying a shared resource `MO` by threads `T1`, `T2`, `T3`, `T4`;
+* `setMO ` - input of the shared resource `MO` by thread `T3`;
+
+
+<p align="center">
+    <img src=".img/duagram3.jpg" alt="Block Diagram">
 </p>
 
