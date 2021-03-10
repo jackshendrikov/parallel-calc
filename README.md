@@ -147,6 +147,6 @@ Symbols in the block diagram:
 
 
 <p align="center">
-    <img src=".img/duagram3.jpg" alt="Block Diagram">
+    <img src="img/diagram3.jpg" alt="Block Diagram">
 </p>
 
