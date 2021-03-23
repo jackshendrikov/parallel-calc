@@ -139,3 +139,29 @@ Symbols in the block diagram:
     <img src="img/diagram3.jpg" alt="Block Diagram">
 </p>
 
+<h3 align="center">Lab 4</h3>
+
+<p align="center">OpenMP. Barriers, critical sections.</p>
+
+<b>Task:</b> 
+
+1. Develop a parallel algorithm for solving a mathematical problem `Z = (B * C) * D + E * (MA * MB) * x` using the OpenMP library in C ++;
+2. Identify shared resources;
+3. Describe the algorithm of each thread (T1 - Ti) with the definition of critical areas and barriers; (
+4. Develop the structural scheme of interaction of threads where to apply all specified means of interaction of processes;
+5. Develop a program;
+6. Perform program debugging;
+7. Get the correct calculation results;
+8. Use Windows Task Manager to monitor CPU kernel load.
+
+**Problem**: `Z = (B * C) * D + E * (MA * MB) * x`;
+
+**Programming language**: `C++`;
+
+**Means of organizing interaction**: `barriers, locks, critical sections of OpenMP;`;
+
+<h4 align="center">Block diagram of the interaction of threads</h4>
+
+<p align="center">
+    <img src="img/diagram4.png" alt="Block Diagram">
+</p>
