@@ -165,3 +165,29 @@ Symbols in the block diagram:
 <p align="center">
     <img src="img/diagram4.png" alt="Block Diagram">
 </p>
+
+
+<h3 align="center">Lab 5</h3>
+
+<p align="center">ADA. Rendezvous.</p>
+
+<b>Task:</b> 
+
+1. Develop a parallel algorithm for solving a mathematical problem `Z = (B * C) * D + E * (MA * MB) * x` using the rendezvous mechanism in ADA;
+2. Describe the algorithm of each thread;
+3. Develop the structural scheme of interaction of threads where to apply all specified means of interaction of processes;
+4. Develop a program, Perform program debugging, Get the correct calculation results;
+
+**Problem**: `Z = (B * C) * D + E * (MA * MB) * x`;
+
+**Programming language**: `ADA`;
+
+**Means of organizing interaction**: `rendezvous`;
+
+**The structure of PKS LP**: `linear`.
+
+<h4 align="center">Block diagram of the interaction of threads</h4>
+
+<p align="center">
+    <img src="img/diagram5.png" alt="Block Diagram">
+</p>
